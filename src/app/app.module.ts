@@ -12,6 +12,7 @@ import {MatButtonModule} from "@angular/material/button";
 import { PageNotFoundComponent } from './public/pages/page-not-found/page-not-found.component';
 import { MarathonWinnerComponent } from './marathon/pages/marathon-winner/marathon-winner.component';
 import {MatCardModule} from "@angular/material/card";
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import {MatCardModule} from "@angular/material/card";
     BrowserAnimationsModule,
     MatToolbarModule,
     MatButtonModule,
-    MatCardModule
+    MatCardModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

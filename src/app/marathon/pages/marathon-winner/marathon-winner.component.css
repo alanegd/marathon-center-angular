@@ -2,3 +2,15 @@
   text-align: center;
   margin: 5%;
 }
+
+.image-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+img{
+  width: 20%;
+  height: auto;
+}
