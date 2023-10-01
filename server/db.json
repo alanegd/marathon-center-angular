@@ -1,0 +1,36 @@
+{
+  "participants": [
+    {
+      "id": "1",
+      "firstName": "John",
+      "lastName": "Doe",
+      "photoUrl": "https://media.meer.com/attachments/5c53053189c47864dd49183ae979592ea2ad1c47/store/fill/410/615/5682624067cc1967ab0f69cb4490cc722558f2e8542772a4e0aa06686cd6/El-maratonista-Geoffrey-Mutai-Kenia.jpg",
+      "centerId": "1",
+      "ranking": 1,
+      "recordTime": "01:30:45"
+    },
+    {
+      "id": "2",
+      "firstName": "Jane",
+      "lastName": "Doe",
+      "photoUrl": "https://www.caf.com/media/4383902/img_20230209_112426_779-1.jpg?anchor=center&mode=crop&width=800&height=594&rnd=133204155760000000",
+      "centerId": "3",
+      "ranking": 1,
+      "recordTime": "02:15:30"
+    }
+  ],
+  "centers": [
+    {
+      "id": "1",
+      "name": "Center 1"
+    },
+    {
+      "id": "2",
+      "name": "Center 2"
+    },
+    {
+      "id": "3",
+      "name": "Center 3"
+    }
+  ]
+}
