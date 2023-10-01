@@ -32,8 +32,19 @@ export class MarathonWinnerComponent implements OnInit {
     });
   }
 
+  private getCenter(): void {
+    this.centersService.getList().subscribe(centers => {
+      const center = centers.find(c => c.id === this.participant.centerId);
+      if (center) {
+        this.center = center;
+        console.log(this.center);
+      }
+    });
+  }
+
 
   ngOnInit(): void {
     this.getParticipant();
+    this.getCenter();
   }
 }
