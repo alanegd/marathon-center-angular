@@ -1,9 +1,12 @@
 <mat-card class="center">
   <mat-card-title> Marathon Winner </mat-card-title>
     <mat-card-content>
-      <p>First Name: </p>
-      <p>Last Name:</p>
-      <p>Record Time:</p>
-      <p>Marathon center name:</p>
+      <div class="mat-card-image image-container">
+        <img mat-card-image src="{{participant.photoUrl}}" alt="{{ participant.firstName }} {{ participant.lastName }}">
+      </div>
+      <p>First Name: {{participant.firstName}}</p>
+      <p>Last Name: {{participant.lastName}}</p>
+      <p>Record Time: {{participant.recordTime}}</p>
+      <p>Marathon center name: {{center.name}}</p>
     </mat-card-content>
 </mat-card>

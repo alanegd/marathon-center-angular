@@ -1,9 +1,15 @@
 import { Injectable } from '@angular/core';
+import {BaseService} from "../../shared/services/base.service";
+import {Participant} from "../model/participant";
+import {HttpClient} from "@angular/common/http";
 
 @Injectable({
   providedIn: 'root'
 })
-export class ParticipantsService {
+export class ParticipantsService extends BaseService<Participant> {
 
-  constructor() { }
+  constructor(http: HttpClient) {
+    super(http);
+    this.resourceEndpoint = "/participants";
+  }
 }
