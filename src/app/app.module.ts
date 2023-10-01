@@ -13,6 +13,10 @@ import { PageNotFoundComponent } from './public/pages/page-not-found/page-not-fo
 import { MarathonWinnerComponent } from './marathon/pages/marathon-winner/marathon-winner.component';
 import {MatCardModule} from "@angular/material/card";
 import { HttpClientModule } from '@angular/common/http';
+import { RecordsContentComponent } from './marathon/pages/records-content/records-content.component';
+import {MatTableModule} from "@angular/material/table";
+import {MatPaginatorModule} from "@angular/material/paginator";
+import {MatSortModule} from "@angular/material/sort";
 
 @NgModule({
   declarations: [
@@ -21,7 +25,8 @@ import { HttpClientModule } from '@angular/common/http';
     RecordsComponent,
     ToolbarComponent,
     PageNotFoundComponent,
-    MarathonWinnerComponent
+    MarathonWinnerComponent,
+    RecordsContentComponent
   ],
   imports: [
     BrowserModule,
@@ -30,7 +35,10 @@ import { HttpClientModule } from '@angular/common/http';
     MatToolbarModule,
     MatButtonModule,
     MatCardModule,
-    HttpClientModule
+    HttpClientModule,
+    MatTableModule,
+    MatPaginatorModule,
+    MatSortModule
   ],
   providers: [],
   bootstrap: [AppComponent]
