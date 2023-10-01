@@ -17,6 +17,9 @@ import { RecordsContentComponent } from './marathon/pages/records-content/record
 import {MatTableModule} from "@angular/material/table";
 import {MatPaginatorModule} from "@angular/material/paginator";
 import {MatSortModule} from "@angular/material/sort";
+import { RecordsFilterComponent } from './marathon/components/records-filter/records-filter.component';
+import {MatInputModule} from "@angular/material/input";
+import {FormsModule} from "@angular/forms";
 
 @NgModule({
   declarations: [
@@ -26,7 +29,8 @@ import {MatSortModule} from "@angular/material/sort";
     ToolbarComponent,
     PageNotFoundComponent,
     MarathonWinnerComponent,
-    RecordsContentComponent
+    RecordsContentComponent,
+    RecordsFilterComponent
   ],
   imports: [
     BrowserModule,
@@ -38,7 +42,9 @@ import {MatSortModule} from "@angular/material/sort";
     HttpClientModule,
     MatTableModule,
     MatPaginatorModule,
-    MatSortModule
+    MatSortModule,
+    MatInputModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

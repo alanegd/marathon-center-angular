@@ -16,13 +16,13 @@ export class RecordsContentComponent implements OnInit, AfterViewInit {
   dataSource = new MatTableDataSource<Participant>();
   displayedColumns: string[] = ['id', 'firstName', 'lastName', 'marathonCenter', 'ranking', 'recordTime'];
   centers: Center[] = [];
+  originalData: Participant[] = [];
 
   @ViewChild(MatPaginator, { static: false }) paginator!: MatPaginator;
-  @ViewChild(MatSort, { static: false}) sort!: MatSort;
+  @ViewChild(MatSort, { static: false }) sort!: MatSort;
 
-  constructor(private participantService: ParticipantsService, private centersService: CentersService) {
+  constructor(private participantService: ParticipantsService, private centersService: CentersService) {}
 
-  }
 
   getAllRecords() {
     this.participantService.getAll().subscribe((response: any) =>{
@@ -66,4 +66,10 @@ export class RecordsContentComponent implements OnInit, AfterViewInit {
     const center = this.centers.find((c) => c.id === centerId);
     return center ? center.name : '';
   }
+
+  applyFilter(filterValue: string) {
+    filterValue = filterValue.trim().toLowerCase();
+    this.dataSource.filter = filterValue;
+  }
+
 }

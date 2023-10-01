@@ -1,3 +1,5 @@
+<app-records-filter (filterChanged)="applyFilter($event)"></app-records-filter>
+
 <div class="table-wrapper">
   <table mat-table [dataSource]="dataSource" class="mat-elevation-z8" matSort>
     <ng-container matColumnDef="id">
