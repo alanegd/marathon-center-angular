@@ -10,7 +10,7 @@ import { ToolbarComponent } from './public/components/toolbar/toolbar.component'
 import {MatToolbarModule} from "@angular/material/toolbar";
 import {MatButtonModule} from "@angular/material/button";
 import { PageNotFoundComponent } from './public/pages/page-not-found/page-not-found.component';
-import { MarathonWinnerComponent } from './marathon/components/marathon-winner/marathon-winner.component';
+import { MarathonWinnerComponent } from './marathon/pages/marathon-winner/marathon-winner.component';
 import {MatCardModule} from "@angular/material/card";
 
 @NgModule({
